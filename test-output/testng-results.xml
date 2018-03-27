@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21471" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21471" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
+      <class name="freecrm.NewTest">
+        <test-method status="PASS" signature="method1()[pri:0, instance:freecrm.NewTest@4d50efb8]" name="method1" duration-ms="21408" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+      </class> <!-- freecrm.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
