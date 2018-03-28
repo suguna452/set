@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class NewTest {
+public class lOGINTest {
 	WebDriver driver;
  /* @Test
   public void f() {
@@ -15,7 +15,7 @@ public class NewTest {
 	  driver.get("www.google.com");
   }
   */
-  @Test
+  @Test(priority=0)
   public void method1() throws InterruptedException
   {
 	  
@@ -27,6 +27,7 @@ public class NewTest {
 	  driver.findElement(By.name("password")).sendKeys("suguna123");
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("//input[@type='submit']")).click();
+	  Thread.sleep(2000);
 	  
   }
 }

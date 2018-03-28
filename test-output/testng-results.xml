@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21471" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
+  <suite name="Default suite" duration-ms="37145" started-at="2018-03-28T14:30:27Z" finished-at="2018-03-28T14:31:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21471" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
-      <class name="freecrm.NewTest">
-        <test-method status="PASS" signature="method1()[pri:0, instance:freecrm.NewTest@4d50efb8]" name="method1" duration-ms="21408" started-at="2018-03-27T13:45:45Z" finished-at="2018-03-27T13:46:06Z">
+    <test name="Default test" duration-ms="37145" started-at="2018-03-28T14:30:27Z" finished-at="2018-03-28T14:31:04Z">
+      <class name="freecrm.Tasks">
+        <test-method status="PASS" signature="method1()[pri:0, instance:freecrm.Tasks@7e2d773b]" name="method1" duration-ms="25332" started-at="2018-03-28T14:30:27Z" finished-at="2018-03-28T14:30:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method1 -->
-      </class> <!-- freecrm.NewTest -->
+        <test-method status="PASS" signature="f1()[pri:1, instance:freecrm.Tasks@7e2d773b]" name="f1" duration-ms="11741" started-at="2018-03-28T14:30:52Z" finished-at="2018-03-28T14:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+      </class> <!-- freecrm.Tasks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
