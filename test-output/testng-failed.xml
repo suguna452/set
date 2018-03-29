@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="freecrm.Tasks">
+      <class name="freecrm.TasksTest">
         <methods>
-          <include name="f1"/>
+          <include name="f2"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- freecrm.Tasks -->
+      </class> <!-- freecrm.TasksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
