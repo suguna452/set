@@ -7,6 +7,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class NewTasksTest extends lOGINTest {
@@ -37,7 +38,16 @@ public class NewTasksTest extends lOGINTest {
 	 driver.switchTo().window(childId);
 	 Thread.sleep(2000);
 	 driver.close();
+	 driver.switchTo().window(parentId);
+	 Thread.sleep(2000);
 	 
+	 WebElement e1= driver.findElement(By.xpath("(//select[@class='select'])[4]"));
+	 e1.click();
+	 Thread.sleep(2000);
+	 Select se2 =new Select(e1);
+	 se2.selectByVisibleText("Complete");
+
+	 driver.findElement(By.xpath("//input[@type='submit']")).click();
 	  
 	 
 
