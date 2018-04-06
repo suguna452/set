@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class lOGINTest {
-	WebDriver driver;
+	protected WebDriver driver;
  /* @Test
   public void f() {
 	 // System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");

@@ -39,15 +39,36 @@ public class NewTasksTest extends lOGINTest {
 	 Thread.sleep(2000);
 	 driver.close();
 	 driver.switchTo().window(parentId);
+	 driver.switchTo().frame("mainpanel");
 	 Thread.sleep(2000);
 	 
-	 WebElement e1= driver.findElement(By.xpath("(//select[@class='select'])[4]"));
+	 WebElement e1= driver.findElement(By.xpath("//select[@name='status']"));
 	 e1.click();
 	 Thread.sleep(2000);
 	 Select se2 =new Select(e1);
 	 se2.selectByVisibleText("Complete");
+	 Thread.sleep(2000);
 
-	 driver.findElement(By.xpath("//input[@type='submit']")).click();
+		  
+		  driver.findElement(By.xpath("(//input[@type='button'])[7]")).click();
+		  Set< String> se11=driver.getWindowHandles();
+		  Iterator<String> se21 =se11.iterator();
+		 String  parentId1=se21.next();
+		 String childId1=se21.next();
+		 driver.switchTo().window(childId1);
+		
+		 
+		 driver.findElement(By.id("search")).sendKeys("aaaaaaaaaaaad");
+		 driver.findElement(By.xpath(("//input[@type='submit']"))).click();
+		 driver.close();
+		 driver.switchTo().window(parentId1);
+		 driver.switchTo().frame("mainpanel");
+		 
+	  /*driver.findElement(By.xpath("//input[@type='submit']")).click();
+	  driver.findElement(By.xpath("//input[@type='button']")).click();*/
+	  Thread.sleep(2000);
+	  driver.findElement(By.xpath("//input[@type='submit']")).click();
+	 
 	  
 	 
 
